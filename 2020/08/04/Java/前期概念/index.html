@@ -1,0 +1,169 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="前期概念.md"><meta name="keywords" content="javajichu,gainian"><meta name="author" content="Zhang"><meta name="copyright" content="Zhang"><title>前期概念.md | Zaneta的小窝</title><link rel="shortcut icon" href="/melody-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.7.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.7.0"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  }
+} </script><meta name="generator" content="Hexo 4.2.1"></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="Toggle article">Toggle site</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#标识符"><span class="toc-number">1.</span> <span class="toc-text">标识符</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#常量"><span class="toc-number">2.</span> <span class="toc-text">常量</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#基本数据类型"><span class="toc-number">3.</span> <span class="toc-text">基本数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#引用数据类型"><span class="toc-number">3.0.1.</span> <span class="toc-text">引用数据类型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方法入门"><span class="toc-number">3.1.</span> <span class="toc-text">方法入门</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#方法定义"><span class="toc-number">3.1.0.0.1.</span> <span class="toc-text">方法定义</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#IDEA"><span class="toc-number">4.</span> <span class="toc-text">IDEA</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#快捷键"><span class="toc-number">4.0.1.</span> <span class="toc-text">快捷键</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#导入模块"><span class="toc-number">4.0.1.0.1.</span> <span class="toc-text">导入模块</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#方法重载（overload）"><span class="toc-number">4.0.1.1.</span> <span class="toc-text">方法重载（overload）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#java内存需要划分为5个部分："><span class="toc-number">4.1.</span> <span class="toc-text">java内存需要划分为5个部分：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#类与对象"><span class="toc-number">5.</span> <span class="toc-text">类与对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#类"><span class="toc-number">5.0.0.1.</span> <span class="toc-text">类</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#局部变量与成员变量"><span class="toc-number">5.0.1.</span> <span class="toc-text">局部变量与成员变量</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#面向对象三大特征：封装、继承、多态"><span class="toc-number">5.1.</span> <span class="toc-text">面向对象三大特征：封装、继承、多态</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#一个标准的类通常拥有下面四个部分"><span class="toc-number">5.1.0.1.</span> <span class="toc-text">一个标准的类通常拥有下面四个部分</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Scanner类"><span class="toc-number">5.2.</span> <span class="toc-text">Scanner类</span></a></li></ol></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="/img/avatar.png"></div><div class="author-info__name text-center">Zhang</div><div class="author-info__description text-center"></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">Articles</span><span class="pull-right">2</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">Tags</span><span class="pull-right">3</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">Categories</span><span class="pull-right">2</span></a></div></div></div><div id="content-outer"><div class="no-bg" id="top-container"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">Zaneta的小窝</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title">前期概念.md</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2020-08-04</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/Java/">Java</a></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><h1 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h1><p>程序中，自己定义的内容。类的名字、方法的名字和变量的名字</p>
+<p>1、包含英文字母（区分大小写）、数字、$、_</p>
+<p>2、不能以数字开头</p>
+<p>3、不能是关键字</p>
+<h1 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h1><p>字符串： 双引号引起的部分，叫做字符串常量 “abc”</p>
+<p>整型：直接的数字，没有小数 100、200</p>
+<p>浮点数</p>
+<p>字符常量：单引号引起的单个字符 ‘a’、‘9’</p>
+<p>布尔：true、false</p>
+<p>空常量：null</p>
+<h1 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h1><p>整数 byte short int long</p>
+<p>浮点 float（四字节） double（八字节）</p>
+<p>字符 char</p>
+<p>布尔型 boolean</p>
+<h3 id="引用数据类型"><a href="#引用数据类型" class="headerlink" title="引用数据类型"></a>引用数据类型</h3><p>字符串、数组、类、接口、Lambda</p>
+<p>注意事项：</p>
+<p>1、字符串不是基本类型，而是引用类型</p>
+<p>2、浮点数可能只是一个近似值，并非精确的值</p>
+<p>3、数据范围与字节数不一定相关，float是四字节，long是八字节</p>
+<p>4、浮点数默认是double，要用float，要加上一个后缀F</p>
+<p>整数默认int，要使用long，加入后缀L</p>
+<h2 id="方法入门"><a href="#方法入门" class="headerlink" title="方法入门"></a>方法入门</h2><h5 id="方法定义"><a href="#方法定义" class="headerlink" title="方法定义"></a>方法定义</h5><p>public static void 方法名称 () {</p>
+<p>​           方法体</p>
+<p>}</p>
+<p>方法名称的命名规则和变量一样，使用小驼峰</p>
+<p>方法体：也就是大括号中可以包含任意语句。</p>
+<h1 id="IDEA"><a href="#IDEA" class="headerlink" title="IDEA"></a>IDEA</h1><p>Create project</p>
+<p>选择empty project</p>
+<p>modules  + new modules</p>
+<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args)</span><br></pre></td></tr></table></figure>
+
+<p>psvm 回车 一个m 回车就可以</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println();</span><br></pre></td></tr></table></figure>
+
+<p>sout 回车</p>
+<p> alt+回车 尝试修正代码</p>
+<p>ctrl +Y 删除光标所在行</p>
+<p>ctrl+D 复制光标所在内容，插入光标位置下面</p>
+<p>ctrl+alt+L 格式化代码</p>
+<h5 id="导入模块"><a href="#导入模块" class="headerlink" title="导入模块"></a>导入模块</h5><p>file -&gt;project structure -&gt; +  -&gt; import modules</p>
+<p>比如5.fori就是for循环</p>
+<p>定义方法的完整格式：</p>
+<p>修饰符 返回值类型 方法名称（参数类型 参数名称，）{</p>
+<p>​                方法体</p>
+<p>​                return 返回值</p>
+<p>}</p>
+<p>修饰符：现阶段的固定写法，public static</p>
+<p>方法的三种调用：</p>
+<p>1、单独调用：方法名称（参数）</p>
+<p>2、打印调用</p>
+<p>3、赋值调用</p>
+<h4 id="方法重载（overload）"><a href="#方法重载（overload）" class="headerlink" title="方法重载（overload）"></a>方法重载（overload）</h4><p>多个方法的名称一样，但是参数列表不一样。</p>
+<p>数组的特点：<br>1、数组是一组引用数据类型</p>
+<p>2、数组当中的多个数据，类型必须统一</p>
+<p>3、数组的长度在程序运行期间不可改变</p>
+<p>两者初始化方式：</p>
+<p>1、动态初始化（指定长度）</p>
+<p>2、静态初始化（指定内容）</p>
+<p>动态初始化数组的格式：</p>
+<p>数据类型[] 数组名称 =new 数据类型[数组长度];</p>
+<p>int[] array;</p>
+<p>array=new int[5];</p>
+<p>静态初始化基本格式：</p>
+<p>数据类型[] 数组名称 =new 数据类型[] {元素1，元素2，、、};</p>
+<p>int[] array;</p>
+<p>array=new int[] {10,11,12};</p>
+<p>省略格式：int [] array={10,11,12};</p>
+<p>动态初始化数组的时候，其中元素会拥有一个默认值。</p>
+<p>整数，默认为0；</p>
+<p>浮点数，默认为0.0；</p>
+<p>字符，默认为‘\u0000’；</p>
+<p>布尔，默认为false；</p>
+<p>饮用，默认为null。</p>
+<h2 id="java内存需要划分为5个部分："><a href="#java内存需要划分为5个部分：" class="headerlink" title="java内存需要划分为5个部分："></a>java内存需要划分为5个部分：</h2><p>1、栈（stack）：存放的都是方法中的局部变量。</p>
+<p><font color=#FF0000 >方法的运行一定要在栈中</font></p>
+<p>​    main</p>
+<pre><code>局部变量：方法中的参数或是方法{}内部的变量</code></pre><p>​        作用域：一旦超出作用域，立刻从内存中消失</p>
+<p>2、堆（heap）：<font color=#FF0000 >凡是new出来的东西，都在堆当中</font></p>
+<p>​                堆内存里面的东西都有一个地址值：16进制</p>
+<p>3、方法去：存储class相关信息，包含方法的信息。</p>
+<p>4、本地方法栈：与操作系统相关</p>
+<p>5、寄存器：与cpu相关</p>
+<p>数组作为方法的参数。</p>
+<p>当调用方法的时候，像方法的小括号进行传参，传递进去的其实是数组的地址值。</p>
+<p>一个方法有0、1、多个参数，但是只能有0或者1个返回值，不能有多个返回值。</p>
+<p>如果希望一个方法中产生多个结果数据进行返回，使用一个数组作为返回值类型。</p>
+<h1 id="类与对象"><a href="#类与对象" class="headerlink" title="类与对象"></a>类与对象</h1><h4 id="类"><a href="#类" class="headerlink" title="类"></a>类</h4><p>一组相关属性和行为的集合</p>
+<p>属性：事物的状态信息</p>
+<p>行为：事物能够做什么</p>
+<p>类是对象的模板，对象是类的实体</p>
+<p>成员变量：对应事物的属性</p>
+<p>成员方法：对应事物的行为</p>
+<p>一个类并不能直接使用，需要根据类创建一个对象，才能使用。</p>
+<p>1、导包：也就是指出需要使用的类，在什么位置</p>
+<p>Import 包名类、类名称</p>
+<p>2、创建，格式</p>
+<p>类名称 对象名=new 类名称（）</p>
+<p>3、使用，分为两种：</p>
+<p>使用成员变量：对象名.成员变量名</p>
+<p>使用成员方法：对象名.成员方法名（参数）</p>
+<h3 id="局部变量与成员变量"><a href="#局部变量与成员变量" class="headerlink" title="局部变量与成员变量"></a>局部变量与成员变量</h3><p>1、定义位置不一样</p>
+<p>局部变量：在方法内部</p>
+<p>成员变量：在方法的外部，直接写在类中</p>
+<p>2、作用范围不一样</p>
+<p>局部变量：只有方法中可以使用，出了方法就不能使用</p>
+<p>成员变量：整个类可以用</p>
+<p>3、默认值不一样</p>
+<p>局部变量：没有默认值，如果想使用，必须手动进行赋值</p>
+<p>成员变量：如果没有赋值，会有默认值，规则和数组一样</p>
+<p>4、内存位置不一样</p>
+<p>局部变量：位于栈内存</p>
+<p>成员变量：堆内存</p>
+<p>5、生命周期</p>
+<p>局部变量：随着方法进栈而诞生，随着方法出栈而消失</p>
+<p>成员变量：随着对象创建而诞生，随着对象垃圾回收而消失</p>
+<h2 id="面向对象三大特征：封装、继承、多态"><a href="#面向对象三大特征：封装、继承、多态" class="headerlink" title="面向对象三大特征：封装、继承、多态"></a>面向对象三大特征：封装、继承、多态</h2><p>封装性在Java中的体现：</p>
+<p>1、方法就是一种封装</p>
+<p>2、关键字private也是一种封装</p>
+<p>封装就是将一些细节信息隐藏起来，对外界不可见。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">stu.setName(<span class="string">"luhan"</span>);</span><br><span class="line">stu.setAge(<span class="number">20</span>);</span><br><span class="line">stu.setMale(<span class="keyword">true</span>);</span><br><span class="line"></span><br><span class="line">System.out.println(<span class="string">"xingming"</span>+ stu.getName());</span><br><span class="line">System.out.println(<span class="string">"nianling"</span>+ stu.getAge());</span><br><span class="line">System.out.println(<span class="string">"shibushiyemen"</span>+stu.isMale());</span><br></pre></td></tr></table></figure>
+
+
+
+<p>当方法的局部变量和类的成员变量重名的时候，依据“就近原则”，优先使用局部变量。如果需要访问本类当中的成员变量，需要使用格式：this.成员变量名</p>
+<p>构造方法是专门用来创建对象的方法，但我们通过关键字new来创建对象时，其实就是在调用构造方法。</p>
+<p>注意：<br>1、构造方法的名称必须和所在的类名称完全一样，就连大小写也一样</p>
+<p>2、构造方法不需要写返回值类型，连void都不写</p>
+<p>3、构造方法不能return一个具体的返回值</p>
+<p>4、如果没有编写任何构造方法，那么编译器将会默认一个构造方法，没有参数</p>
+<h4 id="一个标准的类通常拥有下面四个部分"><a href="#一个标准的类通常拥有下面四个部分" class="headerlink" title="一个标准的类通常拥有下面四个部分"></a>一个标准的类通常拥有下面四个部分</h4><p>1、所有的成员变量都要使用private关键字修饰</p>
+<p>2、为每个成员变量编写一对Getter/Setter方法</p>
+<p>3、编写一个无参数构造方法</p>
+<p>4、编写一个全参数构造方法</p>
+<p>这样的标准类叫做java bean</p>
+<h2 id="Scanner类"><a href="#Scanner类" class="headerlink" title="Scanner类"></a>Scanner类</h2><p>功能：可以实现键盘输入数据，到程序当中</p>
+<p>引用类型的一般使用步骤：</p>
+<p>1、导包</p>
+<p>import 包路径.类名称</p>
+<p>如果需要使用的目标类和当前类位于同一个包下，则可以省略导包语句不写</p>
+<p>只有java.lang包下的内容不需要导包，其他都需要import语句</p>
+<p>2、创建</p>
+<p>类名称 对象名=new 类名称（）</p>
+<p>3、使用</p>
+<p>对象名.成员方法名（）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br></pre></td></tr></table></figure>
+
+<p>System.in代表从键盘进行输入</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sc.nextInt();</span><br></pre></td></tr></table></figure>
+
+<p> 获取键盘输入的int数字</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String str = sc.next();</span><br></pre></td></tr></table></figure>
+
+<p>获取键盘输入的字符串</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export M2_HOME&#x3D;&#x2F;Users&#x2F;zhangzheng&#x2F;Downloads&#x2F;apache-maven-3.6.3</span><br><span class="line">export PATH&#x3D;$PATH:$M2_HOME&#x2F;bin</span><br></pre></td></tr></table></figure>
+
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Zhang</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://yoursite.com/2020/08/04/Java/%E5%89%8D%E6%9C%9F%E6%A6%82%E5%BF%B5/">http://yoursite.com/2020/08/04/Java/%E5%89%8D%E6%9C%9F%E6%A6%82%E5%BF%B5/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/javajichu/">javajichu</a><a class="post-meta__tags" href="/tags/gainian/">gainian</a></div><nav id="pagination"><div class="prev-post pull-left"><a href="/2021/03/15/NLP/test-md/"><i class="fa fa-chevron-left">  </i><span>This is a test</span></a></div></nav></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2013 - 2021 By Zhang</div><div class="framework-info"><span>Driven - </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody" target="_blank" rel="noopener"><span>Melody</span></a></div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.7.0"></script><script src="/js/fancybox.js?version=1.7.0"></script><script src="/js/sidebar.js?version=1.7.0"></script><script src="/js/copy.js?version=1.7.0"></script><script src="/js/fireworks.js?version=1.7.0"></script><script src="/js/transition.js?version=1.7.0"></script><script src="/js/scroll.js?version=1.7.0"></script><script src="/js/head.js?version=1.7.0"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script></body></html>
